@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1f2933;
+    color:white;
+}
+/*=====Pages(section plein écran)*/
+.page{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+/*=====Photo de profil=====*/
+.photo{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    display: block;
+    margin:0 auto;
+    object-fit: cover;
+}
+/*=====Biographie====*/
+.bio{
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+    color:#e5e7eb;
+}
+/*=====Titres=====*/
+.title {
+    opacity: 0;
+    transform: translateY(25px);
+    transition: all 1s ease;
+}
+/* Classe ajoutée par JavaScript */
+.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+/*=====Liens=====*/
+a {
+    color: #1f2933;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+a:hover {
+    text-decoration: underline;
+}
